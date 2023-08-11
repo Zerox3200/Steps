@@ -1,0 +1,96 @@
+.Last_Step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Inside_Last_Step {
+    width: 87%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fe;
+}
+
+.Inside_Last_Step_pt1 {
+    height: 45%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: solid #00000066 1px;
+}
+
+.Inside_Last_Step_pt1_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding-left: 12px;
+}
+
+.Inside_Last_Step_pt1_1 p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.Inside_Last_Step_pt1_1 a {
+    color: black;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.Inside_Last_Step_pt1_2 {
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Inside_Last_Step_pt1_2 p {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.Inside_Last_Step_pt2 {
+    height: calc(55%/2);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 12px;
+    align-items: center;
+}
+
+.Inside_Last_Step_pt2 p {
+    margin: 0;
+}
+
+.Inside_Last_Step_pt2 p:first-of-type {
+    font-size: 13px;
+}
+
+.Inside_Last_Step_pt2 p:nth-of-type(2) {
+    font-size: small;
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px) {
+    .Last_Step {
+        background-color: white;
+        width: 84%;
+        margin: auto;
+        position: relative;
+        bottom: 37px;
+        border-radius: 5px;
+        height: 312px;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 30px;
+    }
+}

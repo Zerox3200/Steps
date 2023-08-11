@@ -1,0 +1,25 @@
+.Submittion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+    text-align: center;
+}
+
+.Submittion h2 {
+    font-style: italic;
+}
+
+@media screen and (max-width:767px) {
+    .Submittion {
+        width: 70%;
+        margin: auto;
+        position: relative;
+        bottom: 25px;
+        background-color: white;
+        border-radius: 8px;
+        height: 305px;
+        row-gap: 8px;
+    }
+}

@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #eef5ff !important;
+}
+
+#root {
+    width: 600px;
+    height: 400px;
+    margin: 136px auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 36% 1fr;
+    padding: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Create the sidebar */
+.Side {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    padding-top: 26px;
+    background-image: url(./../images/bg-sidebar-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 6px;
+}
+
+.Step {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    column-gap: 19px;
+}
+
+.circle {
+    border: solid #bee1ff 1px;
+    height: 0px;
+    border-radius: 50%;
+    width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transition-property: all;
+    cursor: pointer;
+}
+
+.circle:hover {
+    color: black;
+    background-color: #bee1ff;
+}
+
+.Inside_Stpe p:first-of-type {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.Inside_Stpe p:nth-of-type(2) {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.Inside_Stpe {
+    padding-top: 12px;
+}
+
+@media screen and (max-width:767px) {
+    #root {
+        grid-template-columns: auto;
+        grid-template-rows: 30% 1fr;
+        width: 375px;
+    }
+
+    .Side {
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+        column-gap: 14px;
+        background-position: 0px -539px;
+    }
+
+    .Inside_Stpe {
+        display: none;
+    }
+
+    .Step {
+        width: 31px;
+    }
+
+    .Back_Next {
+        position: absolute;
+        bottom: -15%;
+    }
+}
